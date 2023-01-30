@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+<title>Message of the Day</title>
+  <link rel="icon" type="image/x-icon" href="https://i.ibb.co/j8r2Dpn/cat.png">
+    </head>
+    <style>
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: 25%;
+}
+      .container3 {  
+width: 100%;  
+height: 100%;  
+display: flex;  
+justify-content: center;  
+align-items: center;  
+}  
+      .container2 {  
+width: 100%;  
+height: 100%;  
+display: flex;  
+justify-content: center;  
+align-items: center;  
+}  
+      button{background-color: gray;color:white;font-size:150%;font-family:Monospace;text-align:center;}
+  .container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+  </style>
+<body style="background-color:black;background-image: url('https://i.ibb.co/Lnn7MJS/motd-1.jpg');" >
+  <div class="container">
+      <div class="image">
+        <img src="https://i.ibb.co/j8r2Dpn/cat.png" width = "100" height="100">
+      </div>
+      <div class="text">
+        <h1 style="color:white;font-family:Monospace">Message of the Day (<font color=red>1</font>/<font color=green>27</font>/<font color=blue>23</font>)
+      </div>
+    </div>
+    <center>
+      <!--PLACE MEDIA/IMAGE HERE -->
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWIBNeRQ2EpM2UpOU1aG69t8JdGy6YVXajymTO0ZFs&s" width="45%" height="45%" style="float:center">
+    </center>
+<p id="demo" style="font-size:150%;font-family:Monospace;text-align:center">'<font color=white>ok i forgot what to put here so like heres a picture of a big-boned cat</font><font color=red><br> also charles is now gold nova 1 so uhh interesting<font color=white></font><font color=red></font> <font color=white></font></p>
+<a href="https://forms.gle/z9GUXSJAPvHYEbkv6" style="font-size:150%;font-family:Monospace;text-decoration:none;text-align:center;">post yo val/cs clips here </a>
+<div class="container2">  
+<button onclick="myFunction4()">Go Back</button>
+ 
+</div>
+  <script>
+var audio4 = new Audio('http://sndup.net/dtk2/d');
+function myFunction4() {
+audio4.pause();
+audio4.currentTime = 0;
+audio4.play();
+window.location.href = "index.html";
+}
+
+function getVote(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","https://download1497.mediafire.com/cgy5hwhgbmag/sc8nvz68r2l446y/poll-vote.php?vote="+int,true);
+  xmlhttp.send();
+  }
+    </script>
+</body>
+</html>
