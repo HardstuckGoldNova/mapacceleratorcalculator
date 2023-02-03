@@ -95,10 +95,20 @@ img {
 <p id="demo" style="font-size:150%;font-family:Monospace;text-align:center">'<font color=white>nation wide is on ur side</font><font color=red><br> also charles is now gold nova 1 so uhh interesting<font color=white></font><font color=red></font> <font color=white></font></p>
 <a href="https://forms.gle/z9GUXSJAPvHYEbkv6" style="font-size:150%;font-family:Monospace;text-decoration:none;text-align:center;">post yo val/cs clips here </a>
 <div class="container2">  
-  <button onclick="myFunction4()"><span>Go Back</span></button>
+  <button onclick="myFunction4()" onmouseenter="myFunction6()"><span>Go Back</span></button>
  
 </div>
   <script>
+var audio6 = new Audio ('http://sndup.net/typd/d');
+  var x = document.getElementById("oldversion");
+    x.style.display = "none";
+function myFunction6() {
+     if (allowplayaudio == true){
+audio6.pause();
+audio6.currentTime = 0;
+audio6.play();
+}
+}
 var audio4 = new Audio('http://sndup.net/dtk2/d');
 function myFunction4() {
 audio4.pause();
