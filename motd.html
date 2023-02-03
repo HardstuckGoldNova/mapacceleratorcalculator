@@ -27,8 +27,43 @@ justify-content: center;
 align-items: center;  
 }  
   
-      button{background-color:transparent;color:white;font-size:150%;font-family:Monospace;text-align:center;rgba(255, 255, 255, 0.75);border-radius: 8px;border-color:white;text-shadow: 2px 2px 2px #000000}
-  .container {
+     button{background-color:transparent;color:white;font-size:150%;font-family:Monospace;text-align:center;rgba(255, 255, 255, 0.75);border-radius: 8px;border-color:white;text-shadow: 2px 2px 2px #000000;  box-shadow: 0 3px #999;}
+
+button:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+      .container {
   display: flex;
   align-items: center;
   justify-content: center
@@ -60,7 +95,7 @@ img {
 <p id="demo" style="font-size:150%;font-family:Monospace;text-align:center">'<font color=white>nation wide is on ur side</font><font color=red><br> also charles is now gold nova 1 so uhh interesting<font color=white></font><font color=red></font> <font color=white></font></p>
 <a href="https://forms.gle/z9GUXSJAPvHYEbkv6" style="font-size:150%;font-family:Monospace;text-decoration:none;text-align:center;">post yo val/cs clips here </a>
 <div class="container2">  
-<button onclick="myFunction4()">Go Back</button>
+  <button onclick="myFunction4()"><span>Go Back</span></button>
  
 </div>
   <script>
