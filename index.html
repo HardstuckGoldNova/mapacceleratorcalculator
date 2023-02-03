@@ -164,21 +164,21 @@ if (document.body.id == "dark") {
   var minutesremaining = minutesgoalval - cminutesval;
   var minutestodo = minutesremaining / daystoreachgoalval;
   version += 1; 
-  text += "<font color=grey>[</font><font color=white>" + version + "</font> <font color=grey>] </font>";
+  text += "<font color=grey>[</font><font color=white>" + version + "</font><font color=grey>] </font>";
      if (allowplayaudio == true){
 audio4.pause();
 audio4.currentTime = 0;
 audio4.play();
 }
 if (minutesremaining > 0) {
-text += "<font color=white>You will have to log </font><i> <font color=orange>" + Math.round(minutestodo * 100) / 100 + " minutes </font></i><font color=white>every day to reach </font><font color=pink>" + minutesgoalval + " minutes </font> <font color=white>logged in </font> <font color=yellow>" + daystoreachgoalval + " days. </font><br>";
+text += "<font color=white>You will have to log </font><i> <font color=blue>" + Math.round(minutestodo * 100) / 100 + " minutes </font></i><font color=white>every day to reach </font><font color=grey>" + minutesgoalval + " minutes </font> <font color=white>logged in </font> <font color=green>" + daystoreachgoalval + " days. </font><br>";
    if (allowplayaudio == true){
 audio.pause();
 audio.currentTime = 0;
   audio.play();
   }
 } else {
- text += "<font color=darkgreen>You already have reached your goal of " + minutesgoalval + " minutes logged by " + cminutesval + " minutes! </font><br>";
+ text += "<font color=grey>You already have reached your goal of " + minutesgoalval + " minutes logged by " + cminutesval + " minutes! </font><br>";
   if (allowplayaudio == true){
 audio2.pause();
 audio2.currentTime = 0;
