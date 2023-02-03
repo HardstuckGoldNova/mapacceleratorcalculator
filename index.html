@@ -164,14 +164,14 @@ if (document.body.id == "dark") {
   var minutesremaining = minutesgoalval - cminutesval;
   var minutestodo = minutesremaining / daystoreachgoalval;
   version += 1; 
-  text += "<font color=blue>[" + version + "] </font>";
+  text += "<font color=grey>[</font><font color=white>" + version + "</font> <font color=grey>] </font>";
      if (allowplayaudio == true){
 audio4.pause();
 audio4.currentTime = 0;
 audio4.play();
 }
 if (minutesremaining > 0) {
-text += "<font color=red>You will have to log </font><i> <font color=orange>" + Math.round(minutestodo * 100) / 100 + " minutes </font></i><font color=red>every day to reach </font><font color=pink>" + minutesgoalval + " minutes </font> <font color=red>logged in </font> <font color=yellow>" + daystoreachgoalval + " days. </font><br>";
+text += "<font color=white>You will have to log </font><i> <font color=orange>" + Math.round(minutestodo * 100) / 100 + " minutes </font></i><font color=white>every day to reach </font><font color=pink>" + minutesgoalval + " minutes </font> <font color=white>logged in </font> <font color=yellow>" + daystoreachgoalval + " days. </font><br>";
    if (allowplayaudio == true){
 audio.pause();
 audio.currentTime = 0;
